@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./frontend/css/stylesheet_copy.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <title>Project Alpha</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Mapa Interactivo</h1>
+    </header>
+
+    <main>
+        <div id="alerts-container">
+            <!-- Aquí se cargarán las alertas mediante JavaScript -->
+        </div>
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+
+    </main>
+
+
+
+
+    <script>
+        var map = L.map('map').setView([39.48228, -0.34468], 18); //maximo zoon es el 18  // 3C UPV
+        /*
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+        */
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 20,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }
+        ).addTo(map);
+
+        var marker = L.marker([39.48228, -0.34468]).addTo(map); // marcador 
+
+
+        var polygon = L.polygon([
+            [39.48242825333031, -0.34481870168984],
+            [39.48231646343896, -0.3444592856907263],
+            [39.482117725410646, -0.344537069750236],
+            [39.48225021749262, -0.3449206256298871]
+
+        ]).addTo(map);
+
+        marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+        circle.bindPopup("I am a circle.");
+        polygon.bindPopup("I am a polygon.");
+
+
+        var popup = L.popup()
+            .setLatLng([51.513, -0.09])
+            .setContent("I am a standalone popup.")
+            .openOn(map);
+
+    </script>
+
+
+
+    <footer>
+        <p>&copy; 2024 J.Blasco . Todos los derechos reservados.</p>
+        <p>Contacto: contacto@email.com | Teléfono: 452851423</p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="./backend/js/alerts.js"></script>
+</body>
+
+</html>
