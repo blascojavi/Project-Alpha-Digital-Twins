@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/frontend/css/stylesheet.css">
+    <script src="/frontend/js/app.js"></script>
+    <title>Project Alpha</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Mapa Interactivo</h1>
+    </header>
+
+    <main>
+        <div id="alerts-container">
+            <!-- Aquí se cargarán las alertas mediante JavaScript -->
+        </div>
+        <div id="map-container">
+            <svg id="map" width="100%" height="500px" style="border: 1px solid black;">
+                <!-- Aquí se cargarán las estancias mediante JavaScript -->
+            </svg>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 J.Blasco . Todos los derechos reservados.</p>
+        <p>Contacto: contacto@email.com | Teléfono: 452851423</p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="/backend/js/alerts.js"></script>
+    <script src="/backend/js/map.js"></script>
+</body>
+</html>

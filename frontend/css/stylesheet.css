@@ -1,0 +1,64 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+/* Estilo para el header y el título */
+header {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+/* Estilo para el contenedor principal */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+    padding: 20px;
+    gap: 20px; /* Espacio entre alertas y mapa */
+}
+
+/* Estilo para el contenedor de alertas */
+#alerts-container {
+    width: 20%;
+    height: 80%;
+    background-color: #ffebcd; /* Color placeholder para el espacio de alertas */
+    border: 2px solid #333;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+/* Estilo para el contenedor del mapa */
+#map-container {
+    width: 70%;  /* Ajustado para dejar espacio al contenedor de alertas */
+    height: 80%;
+    background-color: #ccc; /* Color placeholder para el espacio del mapa */
+    border: 2px solid #333;
+}
+
+/* Estilo para el footer */
+footer {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    font-size: 0.9em;
+    color: #666;
+}
