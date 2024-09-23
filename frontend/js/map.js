@@ -41,7 +41,9 @@ crearEstancia(170, 50, 70, 20, "orange", "");
 crearEstancia(170, 70, 70, 100, "purple", "V.3B.0.06");
 crearEstancia(240, 50, 70, 120, "lightblue", "V.3B.0.017");
 crearEstancia(310, 50, 70, 120, "brown", "V.3B.0.017");
-
+crearEstancia(50, 170, 330, 50, "white","Pasillo");
+crearEstancia(170, 220, 70, 150, "white","Pasillo");
+crearEstancia(50,370,330,50, "white","Pasillo");
 
 /*crearEstancia(150, 50, 100, 50, "lightblue", "V.3B.0.002");
 crearEstancia(150, 100, 100, 50, "green", "V.3B.0.003");
