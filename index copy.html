@@ -34,44 +34,7 @@
 
 
 
-    <script>
-        //https://leafletjs.com/examples/quick-start/
 
-        var map = L.map('map').setView([39.48228, -0.34468], 18); //maximo zoon es el 18  // 3C UPV
-        /*
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap contributors'
-        }).addTo(map);
-        */
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 20,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }
-        ).addTo(map);
-
-        var marker3C = L.marker([39.48228, -0.34468]).addTo(map); // marcador 
-
-
-        var polygon = L.polygon([
-            [39.48242825333031, -0.34481870168984],
-            [39.48231646343896, -0.3444452856907263],
-            [39.482117725410646, -0.344537069750236],
-            [39.48223021749262, -0.3449206256298871]
-        ]).addTo(map);
-
-
-
-        marker3C.bindPopup("<b>Agronomos</b><br>Edificio 3b.").openPopup();
-        circle.bindPopup("I am a circle.");
-        polygon.bindPopup("I am a polygon.");
-
-
-        var popup = L.popup()
-            .setLatLng([51.513, -0.09])
-            .setContent("I am a standalone popup.")
-            .openOn(map);
-
-    </script>
 
 
 
@@ -82,6 +45,7 @@
 
     <!-- Enlace al archivo JavaScript -->
     <script src="./backend/js/alerts.js"></script>
+    <script src="./frontend/js/leafletjs.js"></script>
 </body>
 
 </html>
