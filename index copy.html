@@ -35,6 +35,8 @@
 
 
     <script>
+        //https://leafletjs.com/examples/quick-start/
+
         var map = L.map('map').setView([39.48228, -0.34468], 18); //maximo zoon es el 18  // 3C UPV
         /*
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -47,18 +49,19 @@
         }
         ).addTo(map);
 
-        var marker = L.marker([39.48228, -0.34468]).addTo(map); // marcador 
+        var marker3C = L.marker([39.48228, -0.34468]).addTo(map); // marcador 
 
 
         var polygon = L.polygon([
             [39.48242825333031, -0.34481870168984],
-            [39.48231646343896, -0.3444592856907263],
+            [39.48231646343896, -0.3444452856907263],
             [39.482117725410646, -0.344537069750236],
-            [39.48225021749262, -0.3449206256298871]
-
+            [39.48223021749262, -0.3449206256298871]
         ]).addTo(map);
 
-        marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+
+
+        marker3C.bindPopup("<b>Agronomos</b><br>Edificio 3b.").openPopup();
         circle.bindPopup("I am a circle.");
         polygon.bindPopup("I am a polygon.");
 
