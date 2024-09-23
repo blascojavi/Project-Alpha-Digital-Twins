@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/frontend/css/stylesheet.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
-    
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
     <script src="/frontend/js/app.js"></script>
     <title>Project Alpha</title>
-    
+
 </head>
+
 <body>
     <header>
         <h1>Mapa Interactivo</h1>
     </header>
 
     <main>
-        <div id="alerts-container">
+        <div id="alerts-container"
+        style="width: 20%; height: 80%; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;"
+        >
             <!-- Aquí se cargarán las alertas mediante JavaScript -->
         </div>
+        <!--
         <div id="map-container">
+                
             <svg id="map" width="100%" height="500px" style="border: 1px solid black;">
-                <!-- Aquí se cargarán las estancias mediante JavaScript -->
+                < !-- Aquí se cargarán las estancias mediante JavaScript - ->
                  </svg>
         </div>
+                        -->
+
+        <div id="map-container"
+            style="width: 100%; height: 80%; display: flex; justify-content: center; align-items: center;">
+            <svg id="map" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;" viewBox="0 0 1000 600"
+                preserveAspectRatio="xMidYMid meet"></svg>
+        </div>
+
     </main>
 
     <footer>
@@ -37,4 +50,5 @@
     <script src="./backend/js/alerts.js"></script>
     <script src="./frontend/js/map.js"></script>
 </body>
+
 </html>
